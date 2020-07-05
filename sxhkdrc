@@ -1,0 +1,9 @@
+super + d
+	dmenu_run
+super + w
+	firefox
+
+# ----------XF86 Hotkeys----------
+# Audio mute, decrease, increase volume
+XF86Audio{Mute,LowerVolume,RaiseVolume}
+	pamixer {-t,-d,-i} 5
