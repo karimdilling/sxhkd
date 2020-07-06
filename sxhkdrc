@@ -1,7 +1,7 @@
 super + d
 	dmenu_run
 super + w
-	firefox
+	$BROWSER
 
 # ----------XF86 Hotkeys----------
 # Audio mute, decrease, increase volume
