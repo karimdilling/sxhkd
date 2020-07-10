@@ -1,9 +1,30 @@
+super + Return
+	$TERMINAL
 super + d
 	dmenu_run
 super + w
 	$BROWSER
+super + e
+	$TERMINAL -e ranger
 
 # ----------XF86 Hotkeys----------
+
 # Audio mute, decrease, increase volume
 XF86Audio{Mute,LowerVolume,RaiseVolume}
-	pamixer {-t,-d,-i} 5
+	pamixer {-t,-d,-i} 5 && pkill -RTMIN+2 dwmblocks
+
+# Audio play/pause, stop, prev, next
+XF86Audio{Play,Stop,Prev,Next}
+	mpc {play,stop,prev,next}
+
+# Web Browser
+XF86HomePage
+	$BROWSER
+
+# E-Mail-Client
+XF86Mail
+	$MAILCLIENT
+
+# Calculator
+XF86Calculator
+	$CALCULATOR
