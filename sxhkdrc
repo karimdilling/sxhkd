@@ -1,3 +1,5 @@
+# ----------Programs----------
+
 super + Return
 	$TERMINAL
 super + d
@@ -6,6 +8,12 @@ super + w
 	$BROWSER
 super + e
 	$TERMINAL -e ranger
+
+# ----------Shell Scripts---------
+
+# Shutdown the computer
+super + shift + c
+	~/shutdown.sh
 
 # ----------XF86 Hotkeys----------
 
