@@ -1,13 +1,13 @@
-# ----------Programs----------
+# ----------Programs--------------
 
 super + Return
 	$TERMINAL
-super + d
-	dmenu_run
 super + w
 	$BROWSER
 super + e
 	$TERMINAL -e ranger
+super + c
+	code # Visual Studio
 
 # ----------Shell Scripts---------
 
